@@ -1,0 +1,13 @@
+*.vsidx
+*.dll
+*.exe
+*.pdb
+*.cache
+*.bin
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+obj/
+bin/
