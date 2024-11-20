@@ -1,0 +1,41 @@
+<Window x:Class="Music_Transcriber.Start"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Music_Transcriber"
+        Title="Start Window" Height="450" Width="800"
+        mc:Ignorable="d">
+
+    <Grid>
+        <!-- Main Content Area -->
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Text="Select an Instrument" FontSize="24" Margin="20,30,0,0"/>
+
+        <!-- Instrument Selection Options -->
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+            <!-- Piano Button -->
+            <Button Width="100" Height="100" Background="LightGray" Margin="10" Click="PianoButton_Click">
+                <StackPanel>
+                    <Image Source="Resources/pngPiano.png" Width="80" Height="80"/>
+                    <TextBlock Text="Piano" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+
+            <!-- Guitar Button -->
+            <Button Width="100" Height="100" Background="LightGray" Margin="10" Click="GuitarButton_Click">
+                <StackPanel>
+                    <Image Source="Resources/pngGuitar.png" Width="80" Height="80"/>
+                    <TextBlock Text="Guitar" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+
+            <!-- Violin Button -->
+            <Button Width="100" Height="100" Background="LightGray" Margin="10" Click="ViolinButton_Click">
+                <StackPanel>
+                    <Image Source="Resources/pngViolin.png" Width="80" Height="80"/>
+                    <TextBlock Text="Violin" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
